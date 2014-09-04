@@ -1,0 +1,17 @@
+<html>
+<head>
+<script type="text/javascript" src="terminal.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+    Terminal(document.body, {
+        commands: {
+            'wat': function(hi){
+                var args = Array.prototype.slice.call(arguments);
+                return JSON.stringify(args);
+            }
+        }
+    });
+</script>
+</body>
+</html>
